@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saša Đorđević - web developer | devsasa.com is my portfolio website with projects - Html, CSS, PHP, JavaScript, React, WordPress">
+    <title>CSS grid gallery</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon-1.png">
+
+    <!-- main css file -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- current page css file -->
+    <link href="assets/css/gallery_style.css" rel="stylesheet">
+    <!-- current page js file -->
+    <script src="assets/js/gallery.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- Navbar for desktop -->
+        <div class="headerDesktop">
+            <div class="container myflex mynav">
+                <div class="mylogo">
+                    <a href="https://www.devsasa.com">
+                        <img src="assets/images/logo/logo-1.png" alt="logo image">
+                    </a></span>
+                </div>
+                <nav>
+                    <ul class="myflex links">
+                        <li><a href="https://www.devsasa.com/projects" class="navLink">Projects</a></li>
+                        <li><a href="https://www.devsasa.com/htmlandcss/gallery" class="navLink navActiv">Current Project</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar for mobile -->
+        <div class="headerMobile">
+            <div class="container myflex">
+                <div class="mylogo">
+                    <a href="https://www.devsasa.com">
+                        <img src="assets/images/logo/logo-1.png" alt="logo image">
+                    </a></span>
+                </div>
+                <nav>
+                    <input type="checkbox" class="toggle-menu">
+                    <div class="hamburger"></div>
+                    <div class="mobileMenu">
+                        <ul class="mainListMob links">     
+                            <li><a href="https://www.devsasa.com/projects" class="navLink">Projects</a></li>
+                            <li><a href="https://www.devsasa.com/htmlandcss/gallery" class="navLink navActiv">Current Project</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container sec1">
+            <h1>CSS grid gallery</h1>
+        </section>
+        <section class="container sec2">
+            <div class="mygridSec2">
+                <div class="mygridSec2Div1">
+                    <h2 class="nameField">Tropical fruits</h2>
+                    <p class="textField">Tropical fruits are fruits that usually grow in warm climates or equatorial regions of the world. 
+                        This fruit is characterized by bright colors, sweet taste, unique texture and is often a very attractive fruit for fresh consumption. 
+                        The group of tropical fruits includes pitaya, rambutan, lychee, guava, carambola, papaya, durian, pomegranate, coconut, and many other fruits.</p>
+                </div>
+                <div class="mygridSec2Div2">
+                    <div id="s2-image1" class="mySec2Image"></div>
+                    <div id="s2-image2" class="mySec2Image"></div>
+                    <div id="s2-image3" class="mySec2Image"></div>
+                    <div id="s2-image4" class="mySec2Image"></div>
+                    <div id="s2-image5" class="mySec2Image"></div>
+                    <div id="s2-image6" class="mySec2Image"></div>
+                    <div id="s2-image7" class="mySec2Image"></div>
+                </div>
+            </div>
+            <div class="textHolder">
+                <p>The image gallery in this project was created with the help of a <span class="boldText">CSS grid</span> layout. 
+                    Using the <span class="boldText">grid-template-columns</span> and <span class="boldText">grid-template-rows properties</span>, one column and seven rows were created for screen sizes below 544px, 
+                    two columns and six rows for screen sizes between 544px and 768px, and four columns and three rows for screen sizes over 768px.</p>
+                <p>The <span class="boldText">scrollIntoView()</span> JavaScript method is applied to each image in the gallery as a click event. 
+                    In order to enable a smooth scrolling effect, the scrollIntoView() method is passed an object with a property of <span class="boldText">behavior: smooth;</span></p>
+            </div>
+        </section>
+        <section class="container sec3">
+            <div class="mygridSec3">
+                <div class="mygridSec3Div1">
+                </div>
+                <div class="mygridSec3Div2">
+                </div>
+            </div>
+        </section>
+    </main>    
+    <footer>
+        <div class="myfooter">
+            <div class="container myflexfooter">
+                <div class="mylogo">
+                    <a href="https://www.devsasa.com">
+                        <img src="assets/images/logo/logo-1.png" alt="logo image">
+                    </a></span>
+                </div>
+                <nav>
+                    <ul class="myflexfooter links">
+                        <li><a href="https://www.devsasa.com/projects" class="navLink">Projects</a></li>
+                        <li><a href="https://www.devsasa.com/htmlandcss/gallery" class="navLink navActiv">Current Project</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                All rights reserved by <a href="https://www.devsasa.com">devsasa.com</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

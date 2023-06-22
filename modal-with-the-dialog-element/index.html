@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saša Đorđević - web developer | devsasa.com is my portfolio website with projects - Html, CSS, PHP, JavaScript, React, WordPress">
+    <title>Modal with the dialog element</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon-1.png">
+
+    <!-- main css file -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- current page css file -->
+    <link href="assets/css/dialog_style.css" rel="stylesheet">
+    <!-- current page js file -->
+    <script src="assets/js/dialog.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- Navbar for desktop -->
+        <div class="headerDesktop">
+            <div class="container myflex mynav">
+                <div class="mylogo">
+                    <a href="https://www.devsasa.com">
+                        <img src="assets/images/logo/logo-1.png" alt="logo image">
+                    </a></span>
+                </div>
+                <nav>
+                    <ul class="myflex links">
+                        <li><a href="https://www.devsasa.com/projects" class="navLink">Projects</a></li>
+                        <li><a href="https://www.devsasa.com/htmlandcss/dialog" class="navLink navActiv">Current Project</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar for mobile -->
+        <div class="headerMobile">
+            <div class="container myflex">
+                <div class="mylogo">
+                    <a href="https://www.devsasa.com">
+                        <img src="assets/images/logo/logo-1.png" alt="logo image">
+                    </a></span>
+                </div>
+                <nav>
+                    <input type="checkbox" class="toggle-menu">
+                    <div class="hamburger"></div>
+                    <div class="mobileMenu">
+                        <ul class="mainListMob links">     
+                            <li><a href="https://www.devsasa.com/projects" class="navLink">Projects</a></li>
+                            <li><a href="https://www.devsasa.com/htmlandcss/dialog" class="navLink navActiv">Current Project</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="modal1">
+        <div class="modalContainer">
+            <div class="modalContent">
+                <div class="modalHeader1">
+                    <h2>The Standard Modal</h2>
+                    <button class="closeBtn1">&times;</button>
+                </div>
+                <div class="modalText">
+                    <p>This is the standard popup modal created with HTML, CSS, and JavaScript. Close the modal to access the page.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+    <section class="container sec1">
+        <h1>The Modal with the &ltdialog&gt element</h1>
+        <div class="btnsHolder">
+            <button class="openBtn2">Open dialog</button>
+            <button class="openBtn3">Open modal</button>
+        </div>
+        <dialog class="modal2">
+                <div class="modalHeader2">
+                    <h2>The Dialog Popup</h2>
+                    <button class="closeBtn2">&times;</button>
+                </div>
+                <div class="modalText2">
+                    <p>This is the dialog popup created with the HTML dialog element. You can access the page even if the dialog is open.</p>
+                </div>
+        </dialog>
+        <dialog class="modal3">
+                <div class="modalHeader3">
+                    <h2>The Modal Popup</h2>
+                    <button class="closeBtn3">&times;</button>
+                </div>
+                <div class="modalText3">
+                    <p>This is the modal popup created with the HTML dialog element. Close the modal to access the page.</p>
+                </div>
+        </dialog>
+        <div class="textHolder">
+            <p>The <span class="boldText">HTML &ltdialog&gt element</span> allows us to easily create a modal or dialog. 
+                The <span class="boldText">modal</span> and the <span class="boldText">dialog</span> are popups that appear on top of the current page. 
+                The biggest difference between these two elements is that when the modal is open you cannot do anything on the current page except scroll. 
+                All other interaction is blocked until you close the modal. 
+                On the other hand, when the dialog is open you can still interact with the current page. 
+                To open the dialog and modal we can use the <span class="boldText">show()</span> and <span class="boldText">showModal()</span> JavaScript methods. 
+                To close the dialog and modal we can use the <span class="boldText">close()</span> JavaScript method.</p>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <div class="myfooter">
+            <div class="container myflexfooter">
+                <div class="mylogo">
+                    <a href="https://www.devsasa.com">
+                        <img src="assets/images/logo/logo-1.png" alt="logo image">
+                    </a></span>
+                </div>
+                <nav>
+                    <ul class="myflexfooter links">
+                        <li><a href="https://www.devsasa.com/projects" class="navLink">Projects</a></li>
+                        <li><a href="https://www.devsasa.com/htmlandcss/dialog" class="navLink navActiv">Current Project</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                All rights reserved by <a href="https://www.devsasa.com">devsasa.com</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

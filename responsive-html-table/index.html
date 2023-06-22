@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saša Đorđević - web developer | devsasa.com is my portfolio website with projects - Html, CSS, PHP, JavaScript, React, WordPress">
+    <title>Responsive HTML table</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon/favicon-1.png">
+
+    <!-- main css file -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- current page css file -->
+    <link href="assets/css/table_style.css" rel="stylesheet">
+    <!-- current page js file -->
+    <script src="assets/js/table.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- Navbar for desktop -->
+        <div class="headerDesktop">
+            <div class="container myflex mynav">
+                <div class="mylogo">
+                    <a href="https://www.devsasa.com">
+                        <img src="assets/images/logo/logo-1.png" alt="logo image">
+                    </a></span>
+                </div>
+                <nav>
+                    <ul class="myflex links">
+                        <li><a href="https://www.devsasa.com/projects" class="navLink">Projects</a></li>
+                        <li><a href="https://www.devsasa.com/htmlandcss/table" class="navLink navActiv">Current Project</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar for mobile -->
+        <div class="headerMobile">
+            <div class="container myflex">
+                <div class="mylogo">
+                    <a href="https://www.devsasa.com">
+                        <img src="assets/images/logo/logo-1.png" alt="logo image">
+                    </a></span>
+                </div>
+                <nav>
+                    <input type="checkbox" class="toggle-menu">
+                    <div class="hamburger"></div>
+                    <div class="mobileMenu">
+                        <ul class="mainListMob links">     
+                            <li><a href="https://www.devsasa.com/projects" class="navLink">Projects</a></li>
+                            <li><a href="https://www.devsasa.com/htmlandcss/table" class="navLink navActiv">Current Project</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container sec1">
+            <h1>The Responsive HTML table</h1>
+        </section>
+        <section class="container sec2">
+            <div class="tableHolder">
+                <table class="table1">
+                    <caption>
+                        UEFA Champions League finals (2010-2022)
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Year</th>
+                            <th>Team</th>
+                            <th>Nation</th>
+                            <th>Score</th>
+                            <th>Runner-up</th>
+                            <th>Head coach</th>
+                            <th>Captain</th>
+                            <th>Venue</th>
+                            <th>Attendance</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody1">
+                        <tr>
+                            <td data-cell="Year">2022</td>
+                            <td data-cell="Team">Real Madrid</td>
+                            <td data-cell="Nation">Spain</td>
+                            <td data-cell="Score">1-0</td>
+                            <td data-cell="Runner-up">Liverpool</td>
+                            <td data-cell="Head coach">Carlo Ancelotti</td>
+                            <td data-cell="Captain">Karim Benzema</td>
+                            <td data-cell="Venue">Stade de France, Paris</td>
+                            <td data-cell="Attendance">75,000</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="Year">2021</td>
+                            <td data-cell="Team">Chelsea</td>
+                            <td data-cell="Nation">England</td>
+                            <td data-cell="Score">1-0</td>
+                            <td data-cell="Runner-up">Manchester City</td>
+                            <td data-cell="Head coach">Thomas Tuchel</td>
+                            <td data-cell="Captain">Cesar Azpilicueta</td>
+                            <td data-cell="Venue">Estádio do Dragão, Porto</td>
+                            <td data-cell="Attendance">14,110</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="Year">2020</td>
+                            <td data-cell="Team">Bayern Munich</td>
+                            <td data-cell="Nation">Germany</td>
+                            <td data-cell="Score">1-0</td>
+                            <td data-cell="Runner-up">Paris SG</td>
+                            <td data-cell="Head coach">Hansi Flick</td>
+                            <td data-cell="Captain">Manuel Neuer</td>
+                            <td data-cell="Venue">Estádio da Luz, Lisbon</td>
+                            <td data-cell="Attendance"><span>0<sup>1*</sup></span></td>
+                        </tr>
+                        <tr>
+                            <td data-cell="Year">2019</td>
+                            <td data-cell="Team">Liverpool</td>
+                            <td data-cell="Nation">England</td>
+                            <td data-cell="Score">2-0</td>
+                            <td data-cell="Runner-up">Tottenham</td>
+                            <td data-cell="Head coach">Jurgen Klopp</td>
+                            <td data-cell="Captain">Jordan Henderson</td>
+                            <td data-cell="Venue">Metropolitano Stadium, Madrid</td>
+                            <td data-cell="Attendance">63,272</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="Year">2018</td>
+                            <td data-cell="Team">Real Madrid</td>
+                            <td data-cell="Nation">Spain</td>
+                            <td data-cell="Score">3-1</td>
+                            <td data-cell="Runner-up">Liverpool</td>
+                            <td data-cell="Head coach">Zinedine Zidane</td>
+                            <td data-cell="Captain">Sergio Ramos</td>
+                            <td data-cell="Venue">Olimpiyskiy Stadium, Kyiv</td>
+                            <td data-cell="Attendance">61,561</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="Year">2017</td>
+                            <td data-cell="Team">Real Madrid</td>
+                            <td data-cell="Nation">Spain</td>
+                            <td data-cell="Score">4-1</td>
+                            <td data-cell="Runner-up">Juventus</td>
+                            <td data-cell="Head coach">Zinedine Zidane</td>
+                            <td data-cell="Captain">Sergio Ramos</td>
+                            <td data-cell="Venue">Millennium Stadium, Cardiff</td>
+                            <td data-cell="Attendance">65,842</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="Year">2016</td>
+                            <td data-cell="Team">Real Madrid</td>
+                            <td data-cell="Nation">Spain</td>
+                            <td data-cell="Score"><span>5-3<sup>2*</sup></span></td>
+                            <td data-cell="Runner-up">Atlético Madrid</td>
+                            <td data-cell="Head coach">Zinedine Zidane</td>
+                            <td data-cell="Captain">Sergio Ramos</td>
+                            <td data-cell="Venue">San Siro, Milan</td>
+                            <td data-cell="Attendance">71,942</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="Year">2015</td>
+                            <td data-cell="Team">Barcelona</td>
+                            <td data-cell="Nation">Spain</td>
+                            <td data-cell="Score">3-1</td>
+                            <td data-cell="Runner-up">Juventus</td>
+                            <td data-cell="Head coach">Thomas Tuchel</td>
+                            <td data-cell="Captain">Andres Iniesta</td>
+                            <td data-cell="Venue">Olympiastadion, Berlin</td>
+                            <td data-cell="Attendance">70,442</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="Year">2014</td>
+                            <td data-cell="Team">Real Madrid</td>
+                            <td data-cell="Nation">Spain</td>
+                            <td data-cell="Score">4-1</td>
+                            <td data-cell="Runner-up">Atlético Madrid</td>
+                            <td data-cell="Head coach">Carlo Ancelotti</td>
+                            <td data-cell="Captain">Iker Casillas</td>
+                            <td data-cell="Venue">Estádio da Luz, Lisbon</td>
+                            <td data-cell="Attendance">60,976</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="Year">2013</td>
+                            <td data-cell="Team">Bayern Munich</td>
+                            <td data-cell="Nation">Germany</td>
+                            <td data-cell="Score">2-1</td>
+                            <td data-cell="Runner-up">Borussia Dortmund</td>
+                            <td data-cell="Head coach">Jupp Heynckes</td>
+                            <td data-cell="Captain">Philipp Lahm</td>
+                            <td data-cell="Venue">Wembley Stadium, London</td>
+                            <td data-cell="Attendance">86,298</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="Year">2012</td>
+                            <td data-cell="Team">Chelsea</td>
+                            <td data-cell="Nation">England</td>
+                            <td data-cell="Score"><span>4-3<sup>3*</sup></span></td>
+                            <td data-cell="Runner-up">Bayern Munich</td>
+                            <td data-cell="Head coach">Roberto Di Matteo</td>
+                            <td data-cell="Captain">John Terry</td>
+                            <td data-cell="Venue">Allianz Arena, Munich</td>
+                            <td data-cell="Attendance">62,500</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="Year">2011</td>
+                            <td data-cell="Team">Barcelona</td>
+                            <td data-cell="Nation">Spain</td>
+                            <td data-cell="Score">3-1</td>
+                            <td data-cell="Runner-up">Manchester United</td>
+                            <td data-cell="Head coach">Pep Guardiola</td>
+                            <td data-cell="Captain">Carles Puyol</td>
+                            <td data-cell="Venue">Wembley Stadium, London</td>
+                            <td data-cell="Attendance">87,695</td>
+                        </tr>
+                        <tr>
+                            <td data-cell="Year">2010</td>
+                            <td data-cell="Team">Inter Milan</td>
+                            <td data-cell="Nation">Italy</td>
+                            <td data-cell="Score">2-0</td>
+                            <td data-cell="Runner-up">Bayern Munich</td>
+                            <td data-cell="Head coach">José Mourinho</td>
+                            <td data-cell="Captain">Javier Zanetti</td>
+                            <td data-cell="Venue">Santiago Bernabéu, Madrid</td>
+                            <td data-cell="Attendance">87,695</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>1* - The final was played behind closed doors; 2* - Score was 1-1 after 90 minutes; 3* - Score was 1-1 after 90 minutes;</p>
+            </div>
+            <div class="textHolder">
+                <p>This table was created using standard table tags. Each td tag contains a <span class="boldText">data-cell attribute</span> with a corresponding value. 
+                    For a screen width smaller than 1200px, the td tag is assigned with the property <span class="boldText">display: grid;</span> and the th tag with property <span class="boldText">display: none;</span>. 
+                    With the help of the <span class="boldText">::before selector</span>, a pseudo-element is created for each td tag. 
+                    With the help of the <span class="boldText">CSS function attr()</span>, the content property of each pseudo-element is assigned the value of the data-cell attribute. 
+                    The data from the table is displayed in two columns when the screen width is smaller than 1200px.</p>
+                <p>This effect was achieved by assigning the tbody tag with properties <span class="boldText">display: grid;</span> and <span class="boldText">grid-template-columns: 12ch auto;</span>. 
+                    Two columns are converted to one column when the screen width is less than 768px. 
+                    When we add the property display: grid; to the td tag, we remove all the accessibility and semantics of using tables. 
+                    To solve this problem, we can add a <span class="boldText">role attribute</span> to all table tags using the JavaScript function ( <a href="https://adrianroselli.com/2018/05/functions-to-add-aria-to-tables-and-lists.html" target="_blanc">Andrian Roselli</a> ). 
+                    Resize the screen to see the look of the responsive table.</p>
+            </div>
+        </section> 
+    </main> 
+    <footer>
+        <div class="myfooter">
+            <div class="container myflexfooter">
+                <div class="mylogo">
+                    <a href="https://www.devsasa.com">
+                        <img src="assets/images/logo/logo-1.png" alt="logo image">
+                    </a></span>
+                </div>
+                <nav>
+                    <ul class="myflexfooter links">
+                        <li><a href="https://www.devsasa.com/projects" class="navLink">Projects</a></li>
+                        <li><a href="https://www.devsasa.com/htmlandcss/table" class="navLink navActiv">Current Project</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                All rights reserved by <a href="https://www.devsasa.com">devsasa.com</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

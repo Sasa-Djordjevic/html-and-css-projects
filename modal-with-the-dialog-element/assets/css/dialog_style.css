@@ -1,0 +1,207 @@
+body {
+    background-color: var(--lightmodegray);
+}
+
+main {
+    min-height: 100vh;
+    min-height: calc(100vh - 150px);
+}
+
+.modal1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(126, 134, 140, 0.7);
+    z-index: 10;
+}
+
+.modalContainer {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1240px;
+    background-color: var(--secondaryOrange);
+    border-radius: 0.5rem 0.5rem 0 0;
+    animation: modalIn 0.75s; 
+}
+
+@keyframes modalIn {
+    from { bottom: -100%;}
+    to { bottom: 0;}
+}
+
+.modalContent {
+    width: 90%;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.modalHeader1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primaryOrange);
+    color: var(--secondaryOrange);
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primaryOrange);
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.modalHeader1 h2 {
+    font-weight: 500;
+}
+
+.closeBtn1 {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 1rem;
+    color: var(--secondaryOrange);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.closeBtn1:hover, .closeBtn1:focus {
+    color: var(--secondaryTextGray);
+}
+
+.modalText {
+    padding: 1rem 1rem 2rem 1rem;
+    color: var(--secondaryTextGray);
+    border: 1px solid var(--primaryOrange);
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.modalText > p {
+    font-size: 1.1rem;
+}
+
+/* sec1 ----- ----- */
+
+.sec1 h1 {
+    color: var(--primaryBlue);
+    text-align: center;
+    padding: 2rem 1rem 3rem 1rem;
+    font-weight: 400;
+}
+
+.btnsHolder {
+    text-align: center;
+}
+
+.openBtn2, .openBtn3 {
+    border: none;
+    outline: none;
+    background: none;
+    background-color: var(--primaryBlue);
+    color: var(--lightmodegray);
+    padding: 0.75rem 2rem;
+    margin: 0.5rem 1rem;
+    font-size: 1.1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.openBtn2:hover, .openBtn3:hover {
+    background-color: var(--secondaryBlue);
+}
+
+.textHolder {
+    width: 90%;
+    max-width: 700px;
+    margin: 2rem auto;
+}
+
+.textHolder > p {
+    line-height: 1.7;
+    font-size: 1.1rem;
+    color: var(--primaryTextGrayDark-2);
+}
+
+.modal2, .modal3 {
+    width: 90%;
+    max-width: 500px;
+    border: 2px solid var(--primaryBlue);
+    border-radius: 0.5rem;
+}
+
+.modal2 {
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal3 {
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal3::backdrop {
+    background-color: rgba(126, 134, 140, 0.7);
+}
+
+.modalHeader2, .modalHeader3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primaryBlue);
+    color: var(--lightmodegray);
+    padding: 0.5rem 1rem;
+}
+
+.closeBtn2, .closeBtn3 {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 1rem;
+    color: var(--lightmodegray);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.closeBtn2:hover, .closeBtn3:hover {
+    color: var(--secondaryTextGray);
+}
+
+.modalText2, .modalText3 {
+    padding: 1rem 1rem 2rem 1rem;
+    color: var(--secondaryTextGray);
+}
+
+.boldText {
+    color: var(--boldText);
+    font-weight: 500;
+}
+
+/* sec2 ----- ----- */
+
+
+/* css media queries ----- ----- */
+
+@media only screen and (min-width: 480px) {
+    .sec1 h1 {
+        padding: 3rem 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .sec1 h1 {
+        padding: 4rem 1rem 3rem 1rem;
+    }
+
+    .textHolder {
+        margin: 3rem auto;
+    }
+}

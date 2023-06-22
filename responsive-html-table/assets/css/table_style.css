@@ -1,0 +1,166 @@
+body {
+    background-color: var(--lightmodegray);
+}
+
+main {
+    min-height: 100vh;
+    min-height: calc(100vh - 150px);
+    padding-bottom: 8rem;
+}
+
+/* sec1 ----- ----- */
+
+.sec1 h1 {
+    color: var(--primaryBlue);
+    text-align: center;
+    padding: 2rem 1rem 3rem 1rem;
+    font-weight: 400;
+}
+
+.tableHolder {
+    padding: 0 1rem;
+}
+
+.tableHolder > p {
+    padding: 0.5rem 1rem;
+    color: var(--primaryTextGray);
+}
+
+.table1 {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table1 caption {
+    color: var(--primaryBlue);
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.table1 th {
+    background-color: var(--primaryBlue);
+    color: var(--lightmodegray);
+    border: 1px solid var(--primaryTextGray);
+    padding: 0.75rem 0.5rem;
+  }  
+
+.table1 td {
+    border: 1px solid var(--primaryTextGray);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.table1 tr:nth-child(odd) {
+    background-color: var(--lightGrayBorder);
+}
+
+.textHolder {
+    padding: 0 6rem;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+}
+
+.textHolder > p {
+    margin-top: 2rem;
+    line-height: 1.7;
+    font-size: 1.1rem;
+    color: var(--primaryTextGrayDark-2);
+    width: 45%;
+}
+
+.textHolder a {
+    text-decoration: none;
+    color: var(--primaryBlue);
+    transition: all 0.4sec ease-in-out;
+}
+
+.textHolder a:hover {
+    color: var(--secondaryBlue);
+}
+
+.boldText {
+    color: var(--boldText);
+    font-weight: 500;
+}
+
+
+/* css media queries ----- ----- */
+
+@media only screen and (max-width: 1200px) {
+    .tableHolder {
+        max-width: 832px;
+        margin: 0 auto;
+    }
+
+    .table1 th {
+        display: none;
+    }
+
+    .tbody1 {
+        display: grid;
+        grid-template-columns: 48% 48%;
+        gap: 1rem 4%;
+    }
+
+    .table1 td {
+        display: grid;
+        grid-template-columns: 12ch auto;
+        text-align: left;
+        padding: 0.5rem 1rem
+    }
+
+    .table1 td::before {
+        content: attr(data-cell) ": ";
+        font-weight: 500;
+        color: var(--primaryBlue);
+    }
+    
+    .table1 tr:nth-child(odd) {
+        background-color: var(--lightmodegray);
+    }
+
+    .table1 tr:nth-child(4n+1), .table1 tr:nth-child(4n+2) {
+        background-color: var(--lightGrayBorder);
+    }
+
+    .textHolder {
+        padding: 0 4rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .tbody1 {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .tableHolder {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .table1 tr:nth-child(4n+1), .table1 tr:nth-child(4n+2) {
+        background-color: var(--lightmodegray);
+    }
+
+    .table1 tr:nth-child(odd) {
+        background-color: var(--lightGrayBorder);
+    }
+
+    .textHolder {
+        padding: 0 2rem;
+        flex-direction: column;
+    }
+
+    .textHolder > p {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .textHolder {
+        padding: 0 1rem;
+    }
+}
